@@ -1,0 +1,199 @@
+<!-- styles.css -->
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 13px 5%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between; /* Centers all header content horizontally */
+  align-items: center; /* Vertically aligns items in the header */
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.logo {
+  margin: 0;
+  font-style: oblique;
+  color: white;
+  font-size: 25px;
+  text-decoration: none; /* Removes underline */
+}
+span {
+  color: orangered;
+}
+.header a:hover
+.header a.active{
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Centers the nav list inside the navbar */
+  flex: 1;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centers the items horizontally */
+  align-items: center; /* Aligns items vertically */
+  margin: 0;
+  padding: 0;
+  flex: 0.9;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+
+.auth-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-left: auto;
+}
+.login-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.signup-btn {
+  background-color: orangered;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: white;
+  color: orangered;
+}
+
+.section {
+  margin-top: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(230, 230, 246, 0.5), rgba(11, 5, 19, 0.5)),  url("e-learn.jpg");
+  background-color: #6abe35;
+  padding: 50px;
+}
+
+.course-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.course-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+}
+
+.course-card img {
+  width: 100%;
+  height: 150px;
+}
+
+.progress-container {
+  background-color: #007bff;
+  max-width: 600px;
+  margin: auto;
+}
+
+.progress-item {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  background: #cbeca0;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  height: 20px;
+}
+
+.progress-bar::after {
+  content: attr(data-progress) '%';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+.footer{
+  margin: 0;
+  width: 100%;
+  padding: 10px 0%;
+  background-color: #4cd866;
+  color: black;
+  font-size: 13px;
+  text-align: center;
+  position: relative; /* Ensure it remains in its place */
+  box-sizing: border-box; /* Includes padding in total width */
+}

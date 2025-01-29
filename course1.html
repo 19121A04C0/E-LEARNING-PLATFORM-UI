@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Bootcamp</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">Dev-<span>Lopers</span></a>
+    <ul class="nav-list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#curriculum">Curriculum</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#enroll">Enroll</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="section">
+    <div class="hero">
+      <h1>Web Development Bootcamp</h1>
+      <p>Learn to build stunning websites from scratch. Master HTML, CSS, JavaScript, and more!</p>
+      <a href="#enroll" class="btn">Enroll Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About the Bootcamp</h2>
+    <p>This comprehensive bootcamp is designed for beginners and intermediates alike. Over 12 weeks, you'll gain hands-on experience in web development, building real-world projects guided by industry experts.</p>
+  </section>
+
+  <!-- Curriculum Section -->
+  <section id="curriculum" class="section">
+    <h2>Curriculum</h2>
+    <div class="curriculum-container">
+      <div class="module">
+        <h3>Module 1: HTML & CSS</h3>
+        <p>Learn the structure and styling of web pages, including responsive design principles.</p>
+      </div>
+      <div class="module">
+        <h3>Module 2: JavaScript Basics</h3>
+        <p>Understand the fundamentals of JavaScript and DOM manipulation.</p>
+      </div>
+      <div class="module">
+        <h3>Module 3: Advanced JavaScript</h3>
+        <p>Dive into ES6, asynchronous programming, and working with APIs.</p>
+      </div>
+      <div class="module">
+        <h3>Module 4: Frontend Frameworks</h3>
+        <p>Master React to build dynamic and interactive web applications.</p>
+      </div>
+      <div class="module">
+        <h3>Module 5: Capstone Project</h3>
+        <p>Apply your skills to build a full-fledged web application.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <p>"This bootcamp transformed my career. The hands-on approach and expert guidance were invaluable."</p>
+        <span>- Alex, Junior Developer</span>
+      </div>
+      <div class="testimonial">
+        <p>"I went from zero to hero in web development. Highly recommend this program!"</p>
+        <span>- Taylor, Freelance Developer</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enroll Section -->
+  <section id="enroll" class="section">
+    <h2>Ready to Start?</h2>
+    <p>Don't miss this opportunity to launch your web development journey. Enroll today!</p>
+    <form class="enroll-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <button type="submit" class="btn">Enroll Now</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Web Development Bootcamp. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
+
+<!-- styles.css -->
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.logo {
+  margin: 0;
+  font-style: oblique;
+  color: white;
+  font-size: 25px;
+  text-decoration: none; /* Removes underline */
+  flex: 1;
+}
+span {
+  color: orangered;
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+  padding: 20px 20px;
+  align-items: center;
+  justify-content: space-between; /* Centers the nav list inside the navbar */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centers the items horizontally */
+  margin: 0;
+  padding: 0;
+  flex: 0.9;/* Ensures logo stays on the left */
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.section {
+  padding: 0px;
+  text-align: center;
+}
+
+.hero {
+  background-color: #f4f4f4;
+  padding: 50px;
+}
+
+.curriculum-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.module {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  width: 60%;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.enroll-form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.enroll-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+.footer{
+    background-color: #4cd866;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+</style>
